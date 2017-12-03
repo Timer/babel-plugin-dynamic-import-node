@@ -1,5 +1,8 @@
 ## Unreleased
 
+## v2.0.0
+- [Breaking] Upgrade to Babel 7
+
 ## v1.2.0
 - [New] support comments (#37)
 - [Refactor] Use template and types from the babel object (#32)

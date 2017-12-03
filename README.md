@@ -1,4 +1,4 @@
-# babel-plugin-dynamic-import-node
+# babel-plugin-transform-dynamic-import
 
 Babel plugin to transpile `import()` to a deferred `require()`, for node. Matches the [proposed spec](https://github.com/domenic/proposal-import-function).
 
@@ -7,7 +7,7 @@ Babel plugin to transpile `import()` to a deferred `require()`, for node. Matche
 ## Installation
 
 ```sh
-$ npm install babel-plugin-dynamic-import-node --save-dev
+$ npm install babel-plugin-transform-dynamic-import --save-dev
 ```
 
 ## Usage
@@ -18,20 +18,20 @@ $ npm install babel-plugin-dynamic-import-node --save-dev
 
 ```json
 {
-  "plugins": ["dynamic-import-node"]
+  "plugins": ["transform-dynamic-import"]
 }
 ```
 
 ### Via CLI
 
 ```sh
-$ babel --plugins dynamic-import-node script.js
+$ babel --plugins transform-dynamic-import script.js
 ```
 
 ### Via Node API
 
 ```javascript
-require('babel-core').transform('code', {
-  plugins: ['dynamic-import-node']
+require('@babel/core').transform('code', {
+  plugins: ['transform-dynamic-import']
 });
 ```

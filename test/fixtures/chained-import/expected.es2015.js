@@ -1,5 +1,3 @@
-'use strict';
-
 Promise.resolve().then(function () {
   return require('test-module');
 }).then(function () {
@@ -7,7 +5,6 @@ Promise.resolve().then(function () {
     return require('test-module-2');
   });
 });
-
 Promise.all([Promise.resolve().then(function () {
   return require('test-1');
 }), Promise.resolve().then(function () {

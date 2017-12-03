@@ -1,10 +1,7 @@
-'use strict';
-
 var MODULE = Object('test-module');
-
 Promise.resolve().then(function () {
-  return require('' + String(MODULE));
+  return require("".concat(MODULE));
 });
 Promise.resolve().then(function () {
-  return require('test-' + String(MODULE));
+  return require("test-".concat(MODULE));
 });

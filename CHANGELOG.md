@@ -1,5 +1,8 @@
 ## Unreleased
 
+## v2.1.0
+- Upgrade to Babel 7 stable
+
 ## v2.0.0
 - [Breaking] Upgrade to Babel 7
 

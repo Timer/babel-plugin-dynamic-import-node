@@ -1,3 +1,5 @@
+"use strict";
+
 Promise.resolve().then(function () {
   return require('test-module');
 }).then(function () {
